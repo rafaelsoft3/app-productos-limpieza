@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+</head>
+<body>
+ <div id="contenedor" class="contenedor"> 
+<div id="productos" class="productos">
+    <section id="lavandina" class="lavandina">
+    <div class="titul">
+        <h2>LAVANDINA</h2>
+    </div>
+
+    <div class="contiene">
+    
+    <div class="litros2">
+        <h2>litros</h2>
+        <input type="number" id="litrolav1" class="input2" placeholder="1000ml = 1litro"> 
+    </div>
+
+    <div class="precio2">
+        <h2>precio</h2>
+        <input type="number" id="preciolav1" disabled="off" class="input2" placeholder="600 x 1 litro"> 
+    </div>
+    </div>
+    <div class="total">
+        <button onclick="fun12()" id="btn-mostrar" type="submit">TOTAL2</button>
+    </div>
+    <div id="contiene">
+      <button onclick="lav500ml()">500ml</button>
+    <button onclick="lav1000ml()">1000ml</button>
+    <button onclick="lav1500ml()">1500ml</button>
+    </div>
+    <button onclick="lav2000ml()">2000ml</button>
+    <button onclick="lav2500ml()">2500ml</button>
+    
+    <div class="contiene">
+    
+    <div class="precio">
+        <h2>precio</h2>
+        <input type="number" id="preciolav" class="input2" placeholder="600 x 1 litro"> 
+    </div>
+
+    <div class="litros">
+        <h2>litros</h2>
+        <input type="number" id="litrolav" disabled="off" class="input2" placeholder="1000 = 1 litro"> 
+    </div>
+
+    </div>
+   
+    <div class="total">
+        <button onclick="fun1()" id="btn-mostrar" type="submit">TOTAL</button>
+    </div>
+    <div >
+     <button onclick="lav500()">$500</button>
+    <button onclick="lav1000()">$1000</button>
+    <button onclick="lav1500()">$1500</button>
+    </div>
+    <button onclick="lav2000()">$2000</button>
+    <button onclick="lav2500()">$2500</button>
+    </section>
+
+    <!--detergente-->
+    <section id="detergente" class="detergente">
+    <div class="titul">
+        <h2>DETERGENTE</h2>
+    </div>
+
+    <div class="contiene">
+    
+    <div class="precio">
+        <h2>precio</h2>
+        <input type="number" id="preciodet" class="input2" placeholder="800 x 1 litro"> 
+    </div>
+
+    <div class="litros">
+        <h2>litros</h2>
+        <input type="number" id="litrodet" disabled="off" class="input2" placeholder="1000ml = 1 litro"> 
+    </div>
+
+    </div>
+   
+    <div class="total">
+        <button onclick="fun2()" id="btn-mostrar" type="submit">TOTAL</button>
+    </div>
+     <div >
+     <button onclick="det500()">$500</button>
+    <button onclick="det1000()">$1000</button>
+    <button onclick="det1500()">$1500</button>
+    </div>
+    <button onclick="det2000()">$2000</button>
+    <button onclick="det2500()">$2500</button>
+    
+    <div class="contiene">
+    
+    <div class="litros2">
+        <h2>litros</h2>
+        <input type="number" id="litrodet1" class="input2" placeholder="1000ml = 1litro"> 
+    </div>
+
+    <div class="precio2">
+        <h2>precio</h2>
+        <input type="number" id="preciodet1" disabled="off" class="input2" placeholder="600 x 1 litro"> 
+    </div>
+    </div>
+    <div class="total">
+        <button onclick="fun21()" id="btn-mostrar" type="submit">TOTAL2</button>
+    </div>
+    <div id="contiene">
+      <button onclick="det500ml()">500ml</button>
+    <button onclick="det1000ml()">1000ml</button>
+    <button onclick="det1500ml()">1500ml</button>
+    </div>
+    <button onclick="det2000ml()">2000ml</button>
+    <button onclick="det2500ml()">2500ml</button>
+    </section>
+  <!--desodorante-->
+  <section id="desodorante" class="desodorante">
+  <div class="titul">
+        <h2>DESODORANTE</h2>
+    </div>
+
+    <div class="contiene">
+    
+    <div class="precio">
+        <h2>precio</h2>
+        <input type="number" id="preciodes" class="input2" placeholder="600 x 1 litro"> 
+    </div>
+
+    <div class="litros">
+        <h2>litros</h2>
+        <input type="number" id="litrodes" disabled="off" class="input2" placeholder="1000 = 1 litro"> 
+    </div>
+
+    </div>
+   
+    <div class="total">
+        <button onclick="fun3()" id="btn-mostrar" type="submit">TOTAL</button>
+    </div>
+        <div >
+     <button onclick="des500()">$500</button>
+    <button onclick="des1000()">$1000</button>
+    <button onclick="des1500()">$1500</button>
+    </div>
+    <button onclick="des2000()">$2000</button>
+    <button onclick="des2500()">$2500</button>
+
+
+     <div class="contiene">
+      <div class="litros">
+        <h2>litros</h2>
+        <input type="number" id="litrodes1"  class="input2" placeholder="1000ml = 1 litro"> 
+    </div>
+     <div class="precio">
+        <h2>precio</h2>
+        <input type="number" id="preciodes1" class="input2" disabled="off" placeholder="$600 x 1 litro"> 
+    </div>
+
+    </div>
+   
+    <div class="total">
+        <button onclick="fun31()" id="btn-mostrar" type="submit">TOTAL</button>
+    </div> 
+    <div id="contiene">
+      <button onclick="des500ml()">500ml</button>
+    <button onclick="des1000ml()">1000ml</button>
+    <button onclick="des1500ml()">1500ml</button>
+    </div>
+    <button onclick="des2000ml()">2000ml</button>
+    <button onclick="des2500ml()">2500ml</button>
+    </section>
+
+
+    
+    <!--jabon-->
+    <section id="jabon" class="jabon">    
+    <div class="titul">
+        <h2>JABON ROPA</h2>
+    </div>
+
+    <div class="contiene">
+    
+    <div class="precio">
+        <h2>precio</h2>
+        <input type="number" id="preciojab" class="input2" placeholder="600 x 1 litro"> 
+    </div>
+
+    <div class="litros">
+        <h2>litros</h2>
+        <input type="number" id="litrojab" disabled="off" class="input2" placeholder="1000 = 1 litro"> 
+    </div>
+
+    </div>
+   
+    <div class="total">
+        <button onclick="fun4()" id="btn-mostrar" type="submit">TOTAL</button>
+    </div>
+         <div >
+     <button onclick="jab500()">$500</button>
+    <button onclick="jab1000()">$1000</button>
+    <button onclick="jab1500()">$1500</button>
+    </div>
+    <button onclick="jab2000()">$2000</button>
+    <button onclick="jab2500()">$2500</button>
+
+
+    <div class="contiene">
+    <div class="litros">
+        <h2>litros</h2>
+        <input type="number" id="litrojab1"  class="input2" placeholder="1000 = 1 litro"> 
+    </div>
+    <div class="precio">
+        <h2>precio</h2>
+        <input type="number" id="preciojab1" class="input2" disabled="off" placeholder="600 x 1 litro"> 
+    </div>
+
+    </div>
+   
+    <div class="total">
+        <button onclick="fun41()" id="btn-mostrar" type="submit">TOTAL</button>
+    </div>
+     <div id="contiene">
+      <button onclick="jab500ml()">500ml</button>
+    <button onclick="jab1000ml()">1000ml</button>
+    <button onclick="jab1500ml()">1500ml</button>
+    </div>
+    <button onclick="jab2000ml()">2000ml</button>
+    <button onclick="jab2500ml()">2500ml</button>
+
+    </section>
+    <!--suavizante-->
+    <section id="suavizante" class="suavizante">
+    <div class="titul">
+        <h2>SUAVIZANTE</h2>
+    </div>
+
+    <div class="contiene">
+    
+    <div class="precio">
+        <h2>precio</h2>
+        <input type="number" id="preciosua" class="input2" placeholder="1000m = 1 litro"> 
+    </div>
+
+    <div class="litros">
+        <h2>litros</h2>
+        <input type="number" id="litrosua" disabled="off" class="input2" placeholder="600 x 1 litro"> 
+    </div>
+
+    </div>
+   
+    <div class="total">
+        <button onclick="fun5()" id="btn-mostrar" type="submit">TOTAL</button>
+    </div>
+    <div >
+     <button onclick="sua500()">$500</button>
+    <button onclick="sua1000()">$1000</button>
+    <button onclick="sua1500()">$1500</button>
+    </div>
+    <button onclick="sua2000()">$2000</button>
+    <button onclick="sua2500()">$2500</button>
+
+
+    <div class="contiene">
+    
+    
+
+    <div class="litros">
+        <h2>litros</h2>
+        <input type="number" id="litrosua1"  class="input2" placeholder="600 x 1 litro"> 
+    </div>
+    <div class="precio">
+        <h2>precio</h2>
+        <input type="number" id="preciosua1" class="input2" disabled="off" placeholder="1000m = 1 litro"> 
+    </div>
+
+    </div>
+   
+    <div class="total">
+        <button onclick="fun51()" id="btn-mostrar" type="submit">TOTAL</button>
+    </div>
+         <div id="contiene">
+      <button onclick="sua500ml()">500ml</button>
+    <button onclick="sua1000ml()">1000ml</button>
+    <button onclick="sua1500ml()">1500ml</button>
+    </div>
+    <button onclick="sua2000ml()">2000ml</button>
+    <button onclick="sua2500ml()">2500ml</button>
+    </section>
+    
+    <!--desengrasante-->
+    <section id="desengrasante" class="desengrasante">
+    <div class="titul">
+        <h2>DESENGRASANTE</h2>
+    </div>
+
+    <div class="contiene">
+    
+    <div class="precio">
+        <h2>precio</h2>
+        <input type="number" id="preciodese" class="input2" placeholder="600 x 1 litro"> 
+    </div>
+
+    <div class="litros">
+        <h2>litros</h2>
+        <input type="number" id="litrodese" disabled="off" class="input2" placeholder="1000 = 1 litro"> 
+    </div>
+
+    </div>
+   
+    <div class="total">
+        <button onclick="fun6()" id="btn-mostrar" type="submit">TOTAL</button>
+    </div>
+    <div >
+     <button onclick="dese500()">$500</button>
+    <button onclick="dese1000()">$1000</button>
+    <button onclick="dese1500()">$1500</button>
+    </div>
+    <button onclick="dese2000()">$2000</button>
+    <button onclick="dese2500()">$2500</button>
+
+    <div class="contiene">
+         <div class="litros">
+        <h2>litros</h2>
+        <input type="number" id="litrodese1"  class="input2" placeholder="1000 = 1 litro"> 
+    </div>
+    
+    <div class="precio">
+        <h2>precio</h2>
+        <input type="number" id="preciodese1" class="input2" disabled="off" placeholder="600 x 1 litro"> 
+    </div>
+
+   
+
+    </div>
+   
+    <div class="total">
+        <button onclick="fun61()" id="btn-mostrar" type="submit">TOTAL</button>
+    </div>
+          <div id="contiene">
+      <button onclick="dese500ml()">500ml</button>
+    <button onclick="dese1000ml()">1000ml</button>
+    <button onclick="dese1500ml()">1500ml</button>
+    </div>
+    <button onclick="dese2000ml()">2000ml</button>
+    <button onclick="dese2500ml()">2500ml</button>
+    </section>
+
+
+
+
+
+    <div id="profin" class="fin">  
+    <h1 class="muestra" id="pmostrar"></h1>
+    <div>
+   
+    <input type="text" id="mensaje1" class="input" placeholder=""> 
+
+    </div>
+    </div>
+</div>
+<div id="boxmenu" class="boxmenu">
+    <div>
+    <a href="#lavandina" >LAVANDINA</a>
+    </div>
+    <div>
+    <a href="#detergente" >DETERGENTE</a>
+    </div>
+    <div>
+    <a href="#desodorante" >DESODORANTE</a>
+    </div>
+    <div>
+    <a href="#jabon" >JABON ROPA</a>
+    </div>
+    <div>
+    <a href="#suavizante" >SUAVIZANTE</a>
+    </div>
+    <div>
+    <a href="#desengrasante" >DESENGRASANTE</a>
+    </div>
+</div>
+</div>
+ </div>
+    <!--array.whatsapp-->
+    <main class="main-content">
+        
+        
+        <section class="box">
+            <h2 class="section-title">organiza para enviar</h2>
+            <div class="input-wrapper">
+                <!-- --input agregar amigos-- -->
+                <input type="text" id="amigo" class="input-name" placeholder="">
+                <!-- --boton agregar amigo-- -->
+                <button class="button-add" onclick="agregarAmigo()">Añadira a la lista</button>
+            </div>
+           <!-- --lista donde apareseran los amigos-- -->
+             <ul id="listaAmigos" class="name-list" aria-labelledby="listaAmigos" role="list"></ul>
+                <!-- --aprese el amigo secreto-- -->
+            <ul id="resultado" class="result-list" aria-live="polite"></ul>
+                <!-- --boton donde genera un amigo secreto-- -->
+                
+
+                <div class="button-container">
+                
+                
+            </div>
+
+<div class="contenedor">
+    <button onclick="joinn()">cargar la lista </button>
+            <H1 id="pmo"></H1>
+            <input type="text" id="mensaje" placeholder="">
+    <a id="enviarWhats" href="#" target="_blank">Enviar por WhatsApp</a>
+</div>       
+</section>
+    </main>
+    <script src="app.js"></script>   
+
+</body>
+</html>

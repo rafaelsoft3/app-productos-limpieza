@@ -1,0 +1,90 @@
+
+.body{
+    text-shadow: 1cm;
+    color: blues;
+    margin:0px!important;
+    overflow: hidden;
+    overscroll-behavior: none;
+    scrollbar-width: none;
+
+    
+
+
+}
+
+
+.contiene{
+    display: flex;
+    color: brown;
+}
+
+.input2{
+    width: 90px;
+    border-radius: 30px;
+    text-align: end;
+}
+.box{
+    width: 100%;
+    height: 50%;
+    background-color: aqua;
+    position: fixed;
+  bottom: 0; /* Se fijará en la parte superior del viewport */
+  z-index: 1000; /* Asegura que quede por encima del contenido */
+  
+}
+.fin{
+    padding-top: 330px;
+}
+.boxmenu{
+    height: 380px;
+    width: 100%;;
+    background-color: brown;
+    float:inline-start;
+    position: fixed;
+    color:azure;
+    left: 208px;
+    top: 0;
+}
+.productos{
+    
+    float: left;
+    top:0;
+    overscroll-behavior: none;
+    scrollbar-width: none;
+}
+.contenedor{
+    display: flex;
+}
+a {
+  text-decoration: none;
+  color: inherit; /* Hereda el color del texto normal */
+}
+h2{
+    margin: 4px;
+}
+.lavandina{
+    background-color: yellow;
+    margin-bottom: 70px;
+   
+}
+.detergente{
+    background-color: #F8FF00;
+    margin-bottom: 70px;
+}
+.desodorante{
+    background-color: fuchsia;
+    margin-bottom: 70px;
+
+}
+.jabon{
+    background-color: blueviolet;
+    margin-bottom: 70px;
+}
+.suavizante{
+    background-color: dodgerblue;
+    margin-bottom: 70px;
+}
+.desengrasante{
+    background-color: blanchedalmond;
+    margin-bottom: 70px;
+}
